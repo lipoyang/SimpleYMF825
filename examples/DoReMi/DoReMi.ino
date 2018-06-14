@@ -6,7 +6,8 @@ int channel = 0;
 
 void setup()
 {
-	YMF825.begin(IOVDD_3V3);
+	YMF825.begin(IOVDD_5V);		// for 5V MCU
+	// YMF825.begin(IOVDD_3V3);	// for 3.3V MCU
 	
 	YMF825.setTone( 0, GRAND_PIANO );
 	YMF825.setTone( 1, E_PIANO );
