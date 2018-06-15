@@ -8,12 +8,14 @@ The following pin assignment is for Arduino UNO. Please check your Arduino's pin
 - 11: MOSI
 - 12: MISO
 - 13: SCK
+<br>
 
 ## SimpleYMF825::begin (drv_sel)
 Begins SimpleYMF825.
 ### drv_sel: IO VDD voltage
 - IOVDD_5V: for 5V MCU (e.g. Arduino UNO)
 - IOVDD_3V3: for 3.3V MCU (e.g. Arduino DUE)
+<br>
 
 ## SimpleYMF825::keyon (ch, octave, key, vol)
 ## SimpleYMF825::keyon (ch, octave, key)
@@ -70,10 +72,12 @@ Start the channel sound.
 |29|-1.1dB|
 |30|-0.6dB|
 |31|0.0dB|
+<br>
 
 ## SimpleYMF825::keyoff (ch)
 Stop the channel sound.
 ### ch: channel number (0-15)
+<br>
 
 ## SimpleYMF825::setTone (ch, tone)
 Sets tone for the channel.
@@ -96,17 +100,20 @@ SimpleYMF825 provides 16 preset tones.
 - SAW_LEAD = 13
 - HARPSICHORD = 14
 - HARMONICA = 15
+<br>
 
 ## SimpleYMF825::setKey (ch, octave, key)
 Sets key for the channel.
 ### ch: channel number (0-15)
 ### octave: octave number (0-7)
 ### key: key name (0-11)
+<br>
 
 ## SimpleYMF825::setVolume (ch, vol)
 Sets volume for the channel.
 ### ch: channel number (0-15)
 ### vol: channnel volume (0-31)
+<br>
 
 ## SimpleYMF825::setMasterVolume (vol)
 Sets master volume. 
