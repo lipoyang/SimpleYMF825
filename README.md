@@ -35,6 +35,7 @@ Start the channel sound.
 - KEY_A_SHARP = 10
 - KEY_B = 11
 ### vol: channnel volume (0-31)
+
 |vol|channnel volume|
 |---|---|
 |0|mute|
@@ -110,7 +111,8 @@ Sets volume for the channel.
 ## SimpleYMF825::setMasterVolume (vol)
 Sets master volume. 
 ### vol: master volume (0...63)
-The master volume applies all channnels. 
+The master volume applies all channnels.
+
 |vol|master volume|
 |---|---|
 |0|mute|
