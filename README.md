@@ -21,8 +21,9 @@ Begins SimpleYMF825.
 ## SimpleYMF825::keyon (ch, octave, key)
 Start the channel sound.
 ### ch: channel number (0-15)
-### octave: octave number (0-7)
+### octave: octave number (1-8)
 - Middle C belongs to octave 4.
+
 ### key: key name (0-11)
 - KEY_C = 0
 - KEY_C_SHARP = 1
@@ -117,7 +118,7 @@ Sets volume for the channel.
 
 ## SimpleYMF825::setMasterVolume (vol)
 Sets master volume. 
-### vol: master volume (0...63)
+### vol: master volume (0-63)
 The master volume applies all channnels.
 
 |vol|master volume|

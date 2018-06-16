@@ -209,7 +209,7 @@ void SimpleYMF825::begin(int drv_sel)
 
 // key on
 // ch: channel number
-// octave: 0...7 (Middle C belongs to octave 4)
+// octave: 1...8 (Middle C belongs to octave 4)
 // key: KEY_C ... KEY_B_SHARP
 // vol: volume
 //      0: mute
@@ -223,7 +223,7 @@ void SimpleYMF825::keyon(int ch, int octave, int key, int vol)
     spi_write( 12, (uint8_t)(vol << 2) );
     
     // key
-    spi_write( 13, FNUMH[key] | (uint8_t)octave );
+    spi_write( 13, FNUMH[key] | (uint8_t)(octave-1) );
     spi_write( 14, FNUML[key] );
     
     // key on
@@ -232,7 +232,7 @@ void SimpleYMF825::keyon(int ch, int octave, int key, int vol)
 
 // key on
 // ch: channel number
-// octave: 0...7 (Middle C belongs to octave 4)
+// octave: 1...8 (Middle C belongs to octave 4)
 // key: KEY_C ... KEY_B_SHARP
 void SimpleYMF825::keyon(int ch, int octave, int key)
 {
@@ -240,7 +240,7 @@ void SimpleYMF825::keyon(int ch, int octave, int key)
     spi_write( 11, (uint8_t)ch );
     
     // key
-    spi_write( 13, FNUMH[key] | (uint8_t)octave );
+    spi_write( 13, FNUMH[key] | (uint8_t)(octave-1) );
     spi_write( 14, FNUML[key] );
     
     // key on
@@ -270,7 +270,7 @@ void SimpleYMF825::setTone(int ch, int tone)
 
 // set key
 // ch: channel number
-// octave: 0...7 (Middle C belongs to octave 4)
+// octave: 1...8 (Middle C belongs to octave 4)
 // key: KEY_C ... KEY_B_SHARP
 void SimpleYMF825::setKey(int ch, int octave, int key)
 {
@@ -278,7 +278,7 @@ void SimpleYMF825::setKey(int ch, int octave, int key)
     spi_write( 11, (uint8_t)ch );
     
     // key
-    spi_write( 13, FNUMH[key] | (uint8_t)octave );
+    spi_write( 13, FNUMH[key] | (uint8_t)(octave-1) );
     spi_write( 14, FNUML[key] );
 }
 

@@ -7,7 +7,7 @@ int channel = 0;
 void setup()
 {
     YMF825.begin(IOVDD_5V);     // for 5V MCU
-    // YMF825.begin(IOVDD_3V3); // for 3.3V MCU
+    //YMF825.begin(IOVDD_3V3); // for 3.3V MCU
     
     YMF825.setTone( 0, GRAND_PIANO );
     YMF825.setTone( 1, E_PIANO );
@@ -33,35 +33,35 @@ void setup()
 
 void loop()
 {
-    YMF825.keyon(channel, 3, KEY_C);
-    delay(500);
-    YMF825.keyoff(channel);
-    delay(100);
-    YMF825.keyon(channel, 3, KEY_D);
-    delay(500);
-    YMF825.keyoff(channel);
-    delay(100);
-    YMF825.keyon(channel, 3, KEY_E);
-    delay(500);
-    YMF825.keyoff(channel);
-    delay(100);
-    YMF825.keyon(channel, 3, KEY_F);
-    delay(500);
-    YMF825.keyoff(channel);
-    delay(100);
-    YMF825.keyon(channel, 3, KEY_G);
-    delay(500);
-    YMF825.keyoff(channel);
-    delay(100);
-    YMF825.keyon(channel, 3, KEY_A);
-    delay(500);
-    YMF825.keyoff(channel);
-    delay(100);
-    YMF825.keyon(channel, 3, KEY_B);
-    delay(500);
-    YMF825.keyoff(channel);
-    delay(100);
     YMF825.keyon(channel, 4, KEY_C);
+    delay(500);
+    YMF825.keyoff(channel);
+    delay(100);
+    YMF825.keyon(channel, 4, KEY_D);
+    delay(500);
+    YMF825.keyoff(channel);
+    delay(100);
+    YMF825.keyon(channel, 4, KEY_E);
+    delay(500);
+    YMF825.keyoff(channel);
+    delay(100);
+    YMF825.keyon(channel, 4, KEY_F);
+    delay(500);
+    YMF825.keyoff(channel);
+    delay(100);
+    YMF825.keyon(channel, 4, KEY_G);
+    delay(500);
+    YMF825.keyoff(channel);
+    delay(100);
+    YMF825.keyon(channel, 4, KEY_A);
+    delay(500);
+    YMF825.keyoff(channel);
+    delay(100);
+    YMF825.keyon(channel, 4, KEY_B);
+    delay(500);
+    YMF825.keyoff(channel);
+    delay(100);
+    YMF825.keyon(channel, 5, KEY_C);
     delay(500);
     YMF825.keyoff(channel);
     delay(100);
