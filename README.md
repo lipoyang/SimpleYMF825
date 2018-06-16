@@ -84,7 +84,8 @@ Stop the channel sound.
 Sets tone for the channel.
 ### ch: channel number (0-15)
 ### tone: tone number (0-15)
-SimpleYMF825 provides 16 preset tones.
+SimpleYMF825 provides 16 preset tones. 
+These tone data are designed by [YAMAHA](https://github.com/yamaha-webmusic/ymf825board).
 - GRAND_PIANO = 0
 - E_PIANO = 1
 - TENOR_SAX = 2
