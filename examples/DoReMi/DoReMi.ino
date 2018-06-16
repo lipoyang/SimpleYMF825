@@ -26,6 +26,8 @@ void setup()
     YMF825.setTone(14, HARPSICHORD );
     YMF825.setTone(15, HARMONICA );
     
+    YMF825.setMasterVolume(32);
+    
     for(int ch=0;ch<16;ch++){
         YMF825.setVolume(ch, 31);
     }
